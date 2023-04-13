@@ -25,10 +25,10 @@ source_suffix = ".rst"
 master_doc = "index"
 
 project = u"OpenMM Python API"
-copyright = u"2015, Stanford University and the Authors"
+copyright = u"2023, Stanford University and the Authors"
 
-version = openmm.version.short_version
-release = openmm.version.full_version
+version = openmm.version.version
+release = openmm.version.git_revision
 
 exclude_patterns = ["_build", "_templates"]
 html_static_path = ["_static"]
@@ -75,6 +75,7 @@ html_theme_options = {
 html_sidebars = {
     "**": [
         "about.html",
+        "versioning.html",
         "searchbox.html",
         "navigation.html",
     ]

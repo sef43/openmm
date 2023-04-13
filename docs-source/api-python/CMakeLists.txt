@@ -10,6 +10,7 @@ file(GLOB STAGING_INPUT_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}"
     "_static/custom.css"
     "_templates/class.rst"
     "_templates/navigation.html"
+    "_templates/versioning.html"
 )
 
 foreach(INIT_FILE ${STAGING_INPUT_FILES})
@@ -46,6 +47,7 @@ add_custom_command(
             "${CMAKE_CURRENT_BINARY_DIR}/_static/custom.css"
             "${CMAKE_CURRENT_BINARY_DIR}/_templates/class.rst"
             "${CMAKE_CURRENT_BINARY_DIR}/_templates/navigation.html"
+            "${CMAKE_CURRENT_BINARY_DIR}/_templates/versioning.html"
             PythonInstall
 )
 file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/api-python/)

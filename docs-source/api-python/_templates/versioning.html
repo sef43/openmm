@@ -1,0 +1,23 @@
+<script>
+function report(value) {
+    newlink = "http://docs.openmm.org/"+value+"/api-python/";
+    location.href = newlink;
+}
+</script>
+<div class="extra-nav-links">
+These docs are for <a href="https://github.com/openmm/openmm/tree/{{ release }}">OpenMM version = {{ version }}</a>
+</div>
+<div class="extra-nav-links">
+you can change to a different version:
+<select name="version" id="version_selector" onchange="report(this.value)">
+    <option>development</option>
+    <option selected>latest</option>
+    <option>7.7.0</option>
+    <option>7.6.0</option>
+    <option>7.5.0</option>
+    <option>7.4.0</option>
+    <option>7.3.0</option>
+    <option>7.2.0</option>
+    <option>7.1.0</option>
+</select>
+</div>
