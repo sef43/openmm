@@ -121,8 +121,8 @@ jobs:
               -DOPENMM_BUILD_OPENCL_LIB=OFF \
               -DOPENMM_BUILD_OPENCL_TESTS=OFF \
 
-          - name: Linux CPU Python 3.11
-            python-version: "3.11"
+          - name: Linux CPU Python 3.12
+            python-version: "3.12"
             os: ubuntu-latest
             OPENCL: false
             cuda-version: ""
